@@ -16,14 +16,58 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3>REGISTRATION FORMS</h3>
-                    <p>citizen and title registration forms</p>
-                </div>
+                    <form  method="POST" action="/index">
+                        <label>name:</label>
+                        <input type="text" name="name"  required><br><br>
+
+                        <label>date of birth:</label>
+                        <input type="date" id="date"><br><br>
+
+                        <label>father's name:</label>
+                        <input type="text" name="Fname" id="Fname" required><br><br>
+
+                        <label>mother's name:</label>
+                        <input type="text" name="Fname" id="Mname" required><br><br>
+
+                        <input type="radio" name="gender" id="genderMale" value="male"> Male
+                        <input type="radio" name="gender" id="genderFmale"value="female">  Female<br><br>
+
+                        <label for="blood-group">Choose your blood group</label>
+                        <select name="blood group" id="bd">
+                            <option value="">--Please choose an option--</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                            </select><br><br>
+                            <h2>Land Information Form</h2>
+
+                                <label for="ownerName">Owner's Name:</label>
+                                <input type="text" id="ownerName" name="ownerName" required><br><br>
+                        
+                                <label for="landLocation">Land Location:</label>
+                                <input type="text" id="landLocation" name="landLocation" required><br><br>
+                        
+                                <label for="landSize">Land Size:</label>
+                                <input type="text" id="landSize" name="landSize" required><br><br>
+                        
+                                <label for="xCoordinate">X Coordinate:</label>
+                                <input type="text" id="xCoordinate" name="xCoordinate" required><br><br>
+                        
+                                <label for="yCoordinate">Y Coordinate:</label>
+                                <input type="text" id="yCoordinate" name="yCoordinate" required><br><br>
+                        
+                                <label for="titleNumber">Title Number:</label>
+                                <input type="text" id="titleNumber" name="titleNumber" required><br><br>
+                                                <button type="submit">Register</button>
+                                              </form>
+                                        </div>
+    
                 <div class="col-md-4">
                     <h3>REGISTERD CITIZENS</h3>
                     <P>List of registered citizens go here</P>
                 </div>
                 <div class="col-md-4">
-                    <h3>REGISTERED TITLES</h3>
                     <P>List of registered titles go here.</P>
                 </div>
             </div>
@@ -51,3 +95,5 @@
 
 </body>
 </html>
+    
+
